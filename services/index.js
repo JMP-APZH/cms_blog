@@ -76,9 +76,9 @@ export const getSimilarPosts = async () => {
             }
         }
     `
-    const results = await request(graphqlAPI, query);
+    const results1 = await request(graphqlAPI, query);
 
-    return results.posts;
+    return results1.posts;
 }
 
 
