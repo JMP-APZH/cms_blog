@@ -7,12 +7,25 @@ import { getPosts, getCategories } from '../services'
 
 import { FeaturedPosts } from '../sections/index'
 
+type PostsProps = {
+  title: string;
+  slug: string;
+}
+
+// const Posts: React.FunctionComponent<PostsProps> = (props) => {
+//   const {} = props
+// }
+
 // const posts = [
 //   { title: 'React Testing', excerpt: 'Learn React Testing' },
 //   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
 // ];
 
-export default function Home({ posts }) {
+// export default function Home({ props: PostsProps }) {
+  const Home = (props: PostsProps) => {
+    const { } = props;
+  }
+  
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -34,6 +47,7 @@ export default function Home({ posts }) {
             <div className='lg:sticky relative top-8'>
               <PostWidget />
               <Categories />
+              <Posts {} />
             </div>
         </div>
       </div>
@@ -46,7 +60,7 @@ export default function Home({ posts }) {
 }
 
 
-
+export default Home
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
