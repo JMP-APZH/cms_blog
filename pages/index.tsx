@@ -24,7 +24,7 @@ type PostsProps = {
 // export default function Home({ props: PostsProps }) {
   const Home = (props: PostsProps) => {
     const { } = props;
-  }
+  
   
   return (
     <div className="container mx-auto px-10 mb-8">
