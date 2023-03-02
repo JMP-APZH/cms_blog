@@ -5,14 +5,14 @@ import { PostCard, Categories, PostWidget } from '../components'
 
 import { getPosts, getCategories } from '../services'
 
-import { FeaturedPosts } from '../sections'
+import { FeaturedPosts } from '../sections/index'
 
 // const posts = [
 //   { title: 'React Testing', excerpt: 'Learn React Testing' },
 //   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
 // ];
 
-export default function Home({ posts, categories }) {
+export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -52,7 +52,7 @@ export async function getStaticProps() {
   const posts = (await getPosts()) || [];
 
   return {
-    props: { posts }
+    props: { posts },
   }
 }
 
