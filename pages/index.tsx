@@ -47,7 +47,7 @@ type PostsProps = {
             <div className='lg:sticky relative top-8'>
               <PostWidget />
               <Categories />
-              <Posts {} />
+              {/* <Posts {...} /> */}
             </div>
         </div>
       </div>
