@@ -12,7 +12,7 @@ import { FeaturedPosts } from '../sections'
 //   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
 // ];
 
-const Home: NextPage = ({ posts, categories }) => {
+export default function Home({ posts, categories }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -46,7 +46,7 @@ const Home: NextPage = ({ posts, categories }) => {
 }
 
 
-export default Home
+
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
