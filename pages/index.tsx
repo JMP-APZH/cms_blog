@@ -23,7 +23,7 @@ type PostsProps = {
 
 // export default function Home({ props: PostsProps }) {
   const Home = (props: PostsProps) => {
-    const { } = props;
+    const { title, slug } = posts;
   
   
   return (
