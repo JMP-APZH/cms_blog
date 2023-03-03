@@ -16,14 +16,14 @@ type PostsProps = {
 //   const {} = props
 // }
 
-// const posts = [
-//   { title: 'React Testing', excerpt: 'Learn React Testing' },
-//   { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
-// ];
+const posts = [
+  { title: 'React Testing', excerpt: 'Learn React Testing' },
+  { title: 'React with Tailwind', excerpt: 'Learn React with Tailwind' },
+];
 
 // export default function Home({ props: PostsProps }) {
   const Home = (props: PostsProps) => {
-    const { title, slug } = posts;
+    // const { title, slug } = posts;
   
   
   return (
